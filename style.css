@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dadada;
+}
+
+.container {
+    height: 450px;
+    width: 850px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.11);
+}
+
+.body-txt {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body-txt p {
+    color: gray;
+    font-weight: bold;
+}
+
+.body-txt a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.body-txt a:hover {
+    color: rgb(26, 26, 26);
+}
+
+.sedans {
+    height: 450px;
+    width: 350px;
+    display: flex;
+    padding: 0px 50px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E38525;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sedans-txt {
+    width: 100%;
+    margin-top: 30px;
+    line-height: 1.5em;
+    color: rgb(226, 225, 225);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+.sedans-title {
+    margin-top: 20px;
+    color: whitesmoke;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+.sedans-btn {
+    margin-top: 50px;
+}
+
+.sedans-btn button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: #E38525;
+    font-weight: bold;
+}
+
+.sedans-btn button:hover {
+    background-color: rgb(231, 231, 231);
+    color: #e4801d;
+    transition: 1s;
+}
+
+.suvs {
+    height: 450px;
+    width: 350px; 
+    display: flex;
+    padding: 0px 50px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #016871;
+}
+
+.suvs-txt {
+    width: 100%;
+    margin-top: 30px;
+    line-height: 1.5em;
+    color: rgb(226, 225, 225);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+.suvs-title {
+    margin-top: 20px;
+    color: whitesmoke;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+.suvs-btn {
+    margin-top: 50px;
+}
+
+.suvs-btn button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: #016871;
+    font-weight: bold;
+}
+
+.suvs-btn button:hover {
+    background-color: rgb(231, 231, 231);
+    color: #037883;
+    transition: 1s;
+}
+
+.luxury {
+    height: 450px;
+    width: 350px;
+    display: flex;
+    padding: 0px 50px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #003F3E;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.luxury-txt {
+    width: 100%;
+    margin-top: 30px;
+    line-height: 1.5em;
+    color: rgb(226, 225, 225);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+.luxury-title {
+    margin-top: 20px;
+    color: whitesmoke;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
+}
+
+.luxury-btn {
+    margin-top: 50px;
+}
+
+.luxury-btn button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: #003F3E;
+    font-weight: bold;
+}
+
+.luxury-btn button:hover {
+    background-color: rgb(231, 231, 231);
+    color: #032c2b;
+    transition: 1s;
+}
+
+@media (max-width: 860px){
+    .container {
+        height: 500px;
+        width: 700px;
+    }
+
+    .sedans {
+        height: 500px;
+    }
+
+    .suvs {
+        height: 500px;
+    }
+
+    .suvs-btn {
+        margin-top: 60x;
+    }
+
+    .luxury {
+        height: 500px;
+    }
+}
+
+@media (max-width: 705px){
+    body {
+        height: 180vh;
+    }
+
+    .container {
+        height: 1000px;
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sedans {
+        height: 350px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .sedans-btn {
+        margin-top: 30px;
+    }
+
+    .suvs {
+        height: 350px;
+    }
+
+    .suvs-btn {
+        margin-top: 20px;
+    }
+
+    .luxury {
+        height: 350px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .luxury-btn {
+        margin-top: 30px;
+    }
+}
